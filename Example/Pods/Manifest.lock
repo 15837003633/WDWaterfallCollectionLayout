@@ -1,0 +1,16 @@
+PODS:
+  - WDWaterfallCollectionLayout (0.1.0)
+
+DEPENDENCIES:
+  - WDWaterfallCollectionLayout (from `../`)
+
+EXTERNAL SOURCES:
+  WDWaterfallCollectionLayout:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WDWaterfallCollectionLayout: 95c0643e1d7acfc5f3cddd4cd9689cfcc1fae3bd
+
+PODFILE CHECKSUM: f29a75e0146a03a537abcf77e1fe9be6766f57d1
+
+COCOAPODS: 1.16.2

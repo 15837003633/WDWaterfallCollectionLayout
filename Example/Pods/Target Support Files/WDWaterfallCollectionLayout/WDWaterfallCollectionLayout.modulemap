@@ -1,0 +1,6 @@
+framework module WDWaterfallCollectionLayout {
+  umbrella header "WDWaterfallCollectionLayout-umbrella.h"
+
+  export *
+  module * { export * }
+}

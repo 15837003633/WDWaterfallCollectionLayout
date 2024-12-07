@@ -1,0 +1,22 @@
+{
+  "name": "WDWaterfallCollectionLayout",
+  "version": "0.1.0",
+  "summary": "A short description of WDWaterfallCollectionLayout.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/scott/WDWaterfallCollectionLayout",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "scott": "50165459@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/scott/WDWaterfallCollectionLayout.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "WDWaterfallCollectionLayout/Classes/**/*"
+}

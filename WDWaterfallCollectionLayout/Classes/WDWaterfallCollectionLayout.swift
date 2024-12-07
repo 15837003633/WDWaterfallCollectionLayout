@@ -24,7 +24,7 @@ open class WDWaterfallCollectionLayout: UICollectionViewFlowLayout {
 extension WDWaterfallCollectionLayout {
     open override func prepare() {
         super.prepare()
-        totalColHeights = Array(repeating: sectionInset.top, count: 3)
+        totalColHeights = Array(repeating: sectionInset.top, count: col)
 
         let width: CGFloat = (collectionView!.bounds.width - sectionInset.left - sectionInset.right - minimumInteritemSpacing * (CGFloat(col) - 1)) / CGFloat(col)
 
@@ -32,11 +32,11 @@ extension WDWaterfallCollectionLayout {
         for i in 0..<itemCount {
             let attrs = UICollectionViewLayoutAttributes(forCellWith: IndexPath(item: i, section: 0))
             let minY = totalColHeights.min()!
-            let minY_index = totalColHeights.index(of: minY)!
+            let minY_index = totalColHeights.firstIndex(of: minY)!
             
             //计算frame
             let x: CGFloat = sectionInset.left + (width + minimumInteritemSpacing) * CGFloat(minY_index)
-            let y: CGFloat = minY + minimumLineSpacing
+            let y: CGFloat = minY + (i < col ? 0 : minimumLineSpacing)
             guard let height: CGFloat = dataSource?.heightForItems(in: self) else {
                 fatalError("must implement datasource")
             }
